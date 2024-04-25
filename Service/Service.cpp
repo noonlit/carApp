@@ -70,3 +70,10 @@ bool Service::writeToFile(const std::string& filename, std::vector<Car*> cars) c
 	return false;
 
 }
+
+Service::~Service()
+{
+	for (Car* car : cars) {
+		delete car;
+	}
+}

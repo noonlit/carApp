@@ -14,4 +14,5 @@ public:
     std::vector<Car*> getCars() const;
     std::vector<Car*> getCarsWithMaxPrice(const double& maxPrice) const;
     bool writeToFile(const std::string& filename, std::vector<Car*> cars) const;
+    ~Service();
 };
