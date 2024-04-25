@@ -27,6 +27,7 @@ Car* addCar(Validator& validator, Service& service)
     }
 
     std::string engineType;
+
     while (true) {
         std::cout << "Is the car's engine type turbo or electric? ";
         std::cin >> engineType;
@@ -80,8 +81,7 @@ void saveCars(Validator& validator, Service& service)
 
         try {
             maxPriceDouble = std::stod(maxPrice);
-        }
-        catch (...) {
+        } catch (...) {
             std::cout << "Maximum price is not a valid number. Please try again.\n";
             continue;
         }
@@ -118,7 +118,6 @@ void saveCars(Validator& validator, Service& service)
     } else {
         std::cout << "Could not write to file.\n";
     }
-
 }
 
 int main()
