@@ -48,7 +48,7 @@ std::vector<Car*> Service::getCarsWithMaxPrice(const double& maxPrice) const
 	// sort by number of doors
 	std::sort(carsWithMaxPrice.begin(), carsWithMaxPrice.end(), [](Car* car1, Car* car2) {
 		return car1->getNumberOfDoors() < car2->getNumberOfDoors();
-		});
+	});
 
 	return carsWithMaxPrice;
 }
